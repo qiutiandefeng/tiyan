@@ -1,0 +1,50 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>连接你我</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+  </head>
+  <body>
+  		<p>连接你我，有你有我!</p>
+  		<p>
+	  	 	如果你有一大片荒芜的肥沃的"土地"，你想在上面种些什么呢？
+	  	 	做这个网站是因为个人兴趣，当然也是为了寻找生活的突破口!
+	  	 </p>
+	  	 <p>
+	  	 	  如果你有好的靠谱的想法。请加我QQ：626264481
+	  	 	  或者给我发邮件: xiaoquan328@163.com
+	  	 	                                                            我们可以一起去探索!
+	  	 </p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	  <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <p>&nbsp;</p>
+	  	 <br>
+	  	  @Copyright © 2009 lianjieniwo. All Rights Reserved.  版权所有 十二科技（北京）发展科技有限公司
+	  	 
+  </body>
+</html>
