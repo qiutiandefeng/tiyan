@@ -1,0 +1,14 @@
+127.0.0.1 - - [18/Jan/2016:23:22:13 +0800] "GET /yiyuan HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:22:13 +0800] "GET /yiyuan HTTP/1.1" 302 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:22:13 +0800] "GET /yiyuan/ HTTP/1.1" 200 34 http-bio-8080-exec-7 427
+127.0.0.1 - - [18/Jan/2016:23:22:13 +0800] "GET /yiyuan/ HTTP/1.1" 200 34 http-bio-8080-exec-2 711
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:22:54 +0800] "GET /yiyuan/ HTTP/1.1" 200 58 http-bio-8080-exec-8 84
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:22:54 +0800] "GET /pro/list HTTP/1.1" 404 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:17 +0800] "GET /pro/list HTTP/1.1" 404 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:26 +0800] "GET /yiyuan HTTP/1.1" 302 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:26 +0800] "GET /yiyuan/ HTTP/1.1" 200 65 http-bio-8080-exec-8 132
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:27 +0800] "GET /yiyuan/pro/list HTTP/1.1" 200 4237 http-bio-8080-exec-8 736
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:27 +0800] "GET /assets/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:27 +0800] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:27 +0800] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [18/Jan/2016:23:23:27 +0800] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 - http-bio-8080-exec-10 0
