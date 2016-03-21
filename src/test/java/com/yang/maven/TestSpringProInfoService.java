@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.shier.tiyan.business.project.service.ProInfoService;
+import com.yfhl.tiyan.business.project.service.ProInfoService;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring-context.xml","classpath:spring-mvc.xml"})
 public class TestSpringProInfoService {
@@ -25,7 +25,7 @@ public class TestSpringProInfoService {
 
 	@Test
 	public void testProInfoService(){
-		System.out.println(proInfoService.findInfo());
+		System.out.println(proInfoService.findInfo(null));
 	
 	}
 	

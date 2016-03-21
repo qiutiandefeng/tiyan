@@ -18,7 +18,7 @@
 	
 	<!-- 加载配置属性文件 -->
 	<context:property-placeholder ignore-unresolvable="true" location="classpath:tiyan.properties" />
-	<context:component-scan base-package="com.shier.tiyan">
+	<context:component-scan base-package="com.yfhl.tiyan">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -29,7 +29,7 @@
     </bean>
     <!-- 自动扫描 mybatis mapper接口 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.shier.tiyan.business.project.dao"/>
+		<property name="basePackage" value="com.yfhl.tiyan.business.project.dao"/>
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
     <!-- 定义事务 -->
