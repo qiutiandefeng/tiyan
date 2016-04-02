@@ -44,6 +44,7 @@
            <a class="blog-nav-item active" href="#">忘记密码 </a>
            <a class="blog-nav-item " href="#">个人认证 </a>
            <a class="blog-nav-item" href="#">合同信息</a>
+           <a class="blog-nav-item" href="#">组个团队吧</a>
            <!-- <a class="blog-nav-item" href="#">社会现象研究</a> -->
         </nav>
       </div>

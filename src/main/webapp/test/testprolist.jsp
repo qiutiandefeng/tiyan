@@ -14,10 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="ygq">
-    <meta name="keywords" content="爱体验,软件在线体验">
+    <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
-    <title>爱体验-软件在线体验</title>
+    <title>爱体验</title>
     <!-- Bootstrap core CSS -->
      <link href="${ctx}/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -64,8 +63,8 @@
 <%--           <li><a href="${ctx}/aboutus.jsp" target="_blank">关于我们</a></li> --%>
 <!--           <li><a href="javascript:void(0);" onclick="fun_show(this);">加入我们</a></li> -->
           <li><a href="https://shop108216587.taobao.com" target="_blank">看累了，来个苹果吧</a></li>
-<!--            <li><a href="javascript:void(0);" onclick="fun_show(this);">我要吐槽</a></li> -->
-<!-- 		  <li><a href="https://shop108216587.taobao.com" target="_blank">论坛</a></li>  -->
+           <li><a href="javascript:void(0);" onclick="fun_show(this);">我要吐槽</a></li>
+		  <li><a href="https://shop108216587.taobao.com" target="_blank">论坛</a></li>
         </ul>
       </div>
        <!-- 程序员工具包-->

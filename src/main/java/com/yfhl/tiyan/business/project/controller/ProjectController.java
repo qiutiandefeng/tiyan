@@ -3,6 +3,8 @@ package com.yfhl.tiyan.business.project.controller;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +21,9 @@ import com.yfhl.tiyan.common.web.BaseController;
 @Controller
 @RequestMapping("/pro")
 public class ProjectController extends BaseController{
+
+	private Log logger = LogFactory.getLog(ProjectController.class);
+
 	private ProInfoService proInfoService;
 	
 	public ProInfoService getProInfoService() {
@@ -44,7 +49,6 @@ public class ProjectController extends BaseController{
 		
 		List<Map<String,Object>> toolList = proInfoService.findInfo(3);//工具包
 		model.addAttribute("toolList", toolList);
-		
 		return "proList";
 	}
 	
