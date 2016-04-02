@@ -9,7 +9,7 @@
     <inceptionYear>2015</inceptionYear>
    <properties>
    		<spring.version>4.0.8.RELEASE</spring.version>
-   		<jdk.version>1.7</jdk.version>
+   		<jdk.version>1.8</jdk.version>
    		<tomcatplug.version>2.1</tomcatplug.version>
    		<jetty.version>7.6.14.v20131031</jetty.version>
    		<mysql.driver.version>5.1.38</mysql.driver.version>
