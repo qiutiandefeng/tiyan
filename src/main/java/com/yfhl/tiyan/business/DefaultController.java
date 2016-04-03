@@ -19,6 +19,6 @@ public class DefaultController {
 	 */
 	@RequestMapping
 	public String index(Model model) {
-		return "redirect:http://www.itiyan.net/pro/list";//重定向
+		return "redirect:/pro/list";//重定向
 	}
 }

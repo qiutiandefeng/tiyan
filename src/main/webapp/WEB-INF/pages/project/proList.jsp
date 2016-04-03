@@ -6,7 +6,7 @@
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
-<%@include file="/WEB-INF/views/include/taglib.jsp" %>
+<%@include file="/WEB-INF/pages/include/taglib.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
   <head>
@@ -50,12 +50,19 @@
 	       $("li").removeClass("active");
 	       $(obj).parent().addClass('active');
     	}
+    	function fun_prompt(){
+    		alert("正在开发中，敬请期待!!!!")
+    	}
     </script>
   </head>
   <body>
     <div class="container">
       <div class="masthead">
-        <h3 class="text-muted">软件在线体验</h3>
+      	 <div align="right">
+         	<a href="${ctx }/login/toLogin" target="_blank">登录</a>&nbsp;&nbsp;<a href="${ctx }/reg/toreg" target="_blank">注册</a>
+         	&nbsp;&nbsp;<a href="${ctx }/login/exitLogin" target="_blank">退出</a>
+        </div>
+      	<h3 class="text-muted">软件在线体验 </h3>
         <ul class="nav nav-justified">
           <li id="lcx" class="active"><a href="javascript:void(0);" onclick="fun_show(this,'nav1')">程序员-工具包</a></li>
           <li id="lg"><a href="javascript:void(0);" onclick="fun_show(this,'nav2')">企业-功能专区</a></li>
@@ -63,9 +70,10 @@
 <!--           <li><a href="http://tieba.baidu.com/p/4366911220" target="_blank")>贴吧</a></li> -->
 <%--           <li><a href="${ctx}/aboutus.jsp" target="_blank">关于我们</a></li> --%>
 <!--           <li><a href="javascript:void(0);" onclick="fun_show(this);">加入我们</a></li> -->
-          <li><a href="https://shop108216587.taobao.com" target="_blank">看累了，来个苹果吧</a></li>
 <!--            <li><a href="javascript:void(0);" onclick="fun_show(this);">我要吐槽</a></li> -->
 <!-- 		  <li><a href="https://shop108216587.taobao.com" target="_blank">论坛</a></li>  -->
+           <li><a href="javascript:void(0);" onclick="fun_prompt();">进入社区</a></li>
+           <li><a href="https://shop108216587.taobao.com" target="_blank">看累了，来个苹果吧</a></li>
         </ul>
       </div>
        <!-- 程序员工具包-->
@@ -86,11 +94,14 @@
 							</c:otherwise>	
 						 </c:choose>
 			          </p>
-			          <!-- 后续待增加功能 -->
-<!-- 			                              访问量:10000000次 <br/> -->
-<!-- 			                             价格:1000元 <br/> -->
-<!-- 			                             联系作者:18710213152<br/> -->
-<!-- 			                             支付下载:hahaha -->
+			           <!-- 后续待增加功能 -->
+<!-- 			          <p> -->
+<!-- 			          	 <a href="" role="button" target="_blank">评论 </a> -->
+<!-- 			          	      访问量:10000000次 <br/> -->
+<!-- 				                                 价格:1000元 <br/> -->
+<!-- 				                                 联系作者:18710213152<br/> -->
+<!-- 				                               支付下载:hahaha -->
+<!-- 			          </p> -->
 			        </div>
 				</c:forEach>
 			</c:if>

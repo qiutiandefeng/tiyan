@@ -37,7 +37,7 @@ public class ProjectController extends BaseController{
 	public String list_mobile(Model model){
 		List<Map<String,Object>> list = proInfoService.findInfo(null);
 		model.addAttribute("proList", list);
-		return "proList_mobile";
+		return "project/proList_mobile";
 	}
 	@RequestMapping(value="/list")
 	public String listfunction(Model model){
@@ -49,7 +49,7 @@ public class ProjectController extends BaseController{
 		
 		List<Map<String,Object>> toolList = proInfoService.findInfo(3);//工具包
 		model.addAttribute("toolList", toolList);
-		return "proList";
+		return "project/proList";
 	}
 	
 //	@RequestMapping(value="/listproduct")
@@ -71,6 +71,6 @@ public class ProjectController extends BaseController{
 	@RequestMapping(value="showVideo")
 	public String showVideo(@RequestParam(value = "videoUrl") String videoUrl){
 //		System.out.println("videoUrl::::::::" + videoUrl);
-		return "video";
+		return "project/video";
 	}
 } 
