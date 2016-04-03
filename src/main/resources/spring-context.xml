@@ -25,11 +25,11 @@
  	<!-- MyBatis begin -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource_tiyan"/>
-        <property name="mapperLocations" value="classpath:/mapping/project/ProInfoDao.xml"/>
+        <property name="mapperLocations" value="classpath:/mapping/*/*Mapper.xml"/>
     </bean>
     <!-- 自动扫描 mybatis mapper接口 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.yfhl.tiyan.business.project.dao"/>
+		<property name="basePackage" value="com.yfhl.tiyan.business.*.dao"/>
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
     <!-- 定义事务 -->

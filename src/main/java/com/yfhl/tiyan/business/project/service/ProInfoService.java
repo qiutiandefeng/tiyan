@@ -7,19 +7,19 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.yfhl.tiyan.business.project.dao.ProInfoDao;
+import com.yfhl.tiyan.business.project.dao.ProInfoMapper;
 import com.yfhl.tiyan.common.service.BaseService;
 @Service
 public class ProInfoService extends BaseService{
 	
-	private ProInfoDao proInfoDao;	
+	private ProInfoMapper proInfoDao;	
 	
-	public ProInfoDao getProInfoDao() {
+	public ProInfoMapper getProInfoDao() {
 		return proInfoDao;
 	}
 
 	@Autowired
-	public void setProInfoDao(ProInfoDao proInfoDao) {
+	public void setProInfoDao(ProInfoMapper proInfoDao) {
 		this.proInfoDao = proInfoDao;
 	}
 

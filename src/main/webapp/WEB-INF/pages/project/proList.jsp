@@ -59,8 +59,8 @@
     <div class="container">
       <div class="masthead">
       	 <div align="right">
-         	<a href="${ctx }/login/toLogin" target="_blank">登录</a>&nbsp;&nbsp;<a href="${ctx }/reg/toreg" target="_blank">注册</a>
-         	&nbsp;&nbsp;<a href="${ctx }/login/exitLogin" target="_blank">退出</a>
+         	<a href="${ctx }/login/toLogin" target="_blank">登录</a>&nbsp;&nbsp;
+         	<a href="${ctx }/login/exitLogin" target="_blank">退出</a>
         </div>
       	<h3 class="text-muted">软件在线体验 </h3>
         <ul class="nav nav-justified">
