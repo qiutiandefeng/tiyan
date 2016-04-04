@@ -5,10 +5,10 @@ import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
-import com.yfhl.tiyan.common.persistence.BaseDao;
+import com.yfhl.tiyan.common.persistence.BaseMapper;
 import com.yfhl.tiyan.common.persistence.annonation.MyBatisDao;
 //@MyBatisDao
-public interface ProInfoMapper extends BaseDao {
+public interface ProInfoMapper extends BaseMapper {
 	/***
 	 * 根据参数查询项目信息
 	 * @author ygq

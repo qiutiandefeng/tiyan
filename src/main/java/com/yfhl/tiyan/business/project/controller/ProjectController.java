@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.yfhl.tiyan.business.project.service.ProInfoService;
+import com.yfhl.tiyan.business.sys.bean.SysLog;
+import com.yfhl.tiyan.business.sys.service.SysLogService;
 import com.yfhl.tiyan.common.web.BaseController;
 /***
  * ProjectController 测试类
@@ -33,6 +35,9 @@ public class ProjectController extends BaseController{
 	public void setProInfoService(ProInfoService proInfoService) {
 		this.proInfoService = proInfoService;
 	}
+	@Autowired
+	private SysLogService sysLogService;
+	
 	@RequestMapping(value="/list_mobile")
 	public String list_mobile(Model model){
 		List<Map<String,Object>> list = proInfoService.findInfo(null);
@@ -49,6 +54,11 @@ public class ProjectController extends BaseController{
 		
 		List<Map<String,Object>> toolList = proInfoService.findInfo(3);//工具包
 		model.addAttribute("toolList", toolList);
+		SysLog sysLog = new SysLog();
+		sysLog.setClassname(ProjectController.class.getName());
+		sysLog.setMethodname("listfunction");
+		sysLogService.insert(sysLog);
+		
 		return "project/proList";
 	}
 	

@@ -11,7 +11,7 @@ import java.util.List;
  * @version 2014-05-16
  * @param <T>
  */
-public interface BaseDao<T> {
+public interface BaseMapper<T> {
 
 	/**
 	 * 获取单条数据

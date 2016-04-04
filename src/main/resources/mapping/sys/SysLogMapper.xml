@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yfhl.tiyan.business.sys.dao.SysLogMapper" >
+  <resultMap id="BaseResultMap" type="com.yfhl.tiyan.business.sys.bean.SysLog" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="CLASSNAME" property="classname" jdbcType="VARCHAR" />
+    <result column="METHODNAME" property="methodname" jdbcType="VARCHAR" />
+    <result column="PARAMETERTYPE" property="parametertype" jdbcType="VARCHAR" />
+    <result column="RETURNVALUE" property="returnvalue" jdbcType="VARCHAR" />
+    <result column="PROCESSTIME" property="processtime" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, CLASSNAME, METHODNAME, PARAMETERTYPE, RETURNVALUE, PROCESSTIME, description
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_sys_log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_sys_log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yfhl.tiyan.business.sys.bean.SysLog" >
+    insert into t_sys_log (id, CLASSNAME, METHODNAME, 
+      PARAMETERTYPE, RETURNVALUE, PROCESSTIME, 
+      description)
+    values (#{id,jdbcType=INTEGER}, #{classname,jdbcType=VARCHAR}, #{methodname,jdbcType=VARCHAR}, 
+      #{parametertype,jdbcType=VARCHAR}, #{returnvalue,jdbcType=VARCHAR}, #{processtime,jdbcType=VARCHAR}, 
+      #{description,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yfhl.tiyan.business.sys.bean.SysLog" >
+    insert into t_sys_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="classname != null" >
+        CLASSNAME,
+      </if>
+      <if test="methodname != null" >
+        METHODNAME,
+      </if>
+      <if test="parametertype != null" >
+        PARAMETERTYPE,
+      </if>
+      <if test="returnvalue != null" >
+        RETURNVALUE,
+      </if>
+      <if test="processtime != null" >
+        PROCESSTIME,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="classname != null" >
+        #{classname,jdbcType=VARCHAR},
+      </if>
+      <if test="methodname != null" >
+        #{methodname,jdbcType=VARCHAR},
+      </if>
+      <if test="parametertype != null" >
+        #{parametertype,jdbcType=VARCHAR},
+      </if>
+      <if test="returnvalue != null" >
+        #{returnvalue,jdbcType=VARCHAR},
+      </if>
+      <if test="processtime != null" >
+        #{processtime,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yfhl.tiyan.business.sys.bean.SysLog" >
+    update t_sys_log
+    <set >
+      <if test="classname != null" >
+        CLASSNAME = #{classname,jdbcType=VARCHAR},
+      </if>
+      <if test="methodname != null" >
+        METHODNAME = #{methodname,jdbcType=VARCHAR},
+      </if>
+      <if test="parametertype != null" >
+        PARAMETERTYPE = #{parametertype,jdbcType=VARCHAR},
+      </if>
+      <if test="returnvalue != null" >
+        RETURNVALUE = #{returnvalue,jdbcType=VARCHAR},
+      </if>
+      <if test="processtime != null" >
+        PROCESSTIME = #{processtime,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yfhl.tiyan.business.sys.bean.SysLog" >
+    update t_sys_log
+    set CLASSNAME = #{classname,jdbcType=VARCHAR},
+      METHODNAME = #{methodname,jdbcType=VARCHAR},
+      PARAMETERTYPE = #{parametertype,jdbcType=VARCHAR},
+      RETURNVALUE = #{returnvalue,jdbcType=VARCHAR},
+      PROCESSTIME = #{processtime,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
